@@ -1,0 +1,28 @@
+Textures and skies
+
+All photo textures and HDRI skies in this folder come from Poly Haven (https://polyhaven.com) and are CC0 (public domain).
+Credit is not required, but the game credits Poly Haven on the main menu.
+
+Textures (diffuse, normal and roughness maps):
+- aerial_grass_rock (2k)
+- brown_mud_dry (2k)
+- rock_face_03 (2k)
+- sandstone_cracks (2k)
+- concrete_floor_worn_001 (2k)
+- concrete_wall_003 (2k)
+- red_brick_03 (2k)
+- weathered_brown_planks (2k)
+- gravelly_sand (1k)
+- red_laterite_soil_stones (1k)
+- aerial_asphalt_01 (1k)
+- corrugated_iron (1k)
+- rust_coarse_01 (1k)
+- metal_plate (1k)
+- bark_brown_02 (1k)
+
+Skies (HDRI):
+- belfast_sunset_puresky
+- kloofendal_38d_partly_cloudy_puresky
+- kloofendal_48d_partly_cloudy_puresky
+- kloofendal_overcast_puresky
+- kloppenheim_06_puresky

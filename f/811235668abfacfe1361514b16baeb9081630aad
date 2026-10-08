@@ -1,0 +1,217 @@
+{
+ "textures": {
+  "aerial_grass_rock": {
+   "res": "2k",
+   "sizeM": [
+    15.0,
+    15.0
+   ]
+  },
+  "brown_mud_dry": {
+   "res": "2k",
+   "sizeM": [
+    1.299996018409729,
+    1.299996018409729
+   ]
+  },
+  "rock_face_03": {
+   "res": "2k",
+   "sizeM": [
+    2.6999995708465576,
+    2.6999995708465576
+   ],
+   "arm": true
+  },
+  "sandstone_cracks": {
+   "res": "2k",
+   "sizeM": [
+    2.0,
+    2.0
+   ]
+  },
+  "concrete_floor_worn_001": {
+   "res": "2k",
+   "sizeM": [
+    3.0,
+    3.000000238418579
+   ]
+  },
+  "concrete_wall_003": {
+   "res": "2k",
+   "sizeM": [
+    3.0,
+    3.000000238418579
+   ],
+   "arm": true
+  },
+  "red_brick_03": {
+   "res": "2k",
+   "sizeM": [
+    1.0,
+    1.0
+   ],
+   "arm": true
+  },
+  "weathered_brown_planks": {
+   "res": "2k",
+   "sizeM": [
+    1.7999999523162842,
+    1.7999999523162842
+   ],
+   "arm": true
+  },
+  "gravelly_sand": {
+   "res": "1k",
+   "sizeM": [
+    2.4800000190734863,
+    2.4800000190734863
+   ]
+  },
+  "red_laterite_soil_stones": {
+   "res": "1k",
+   "sizeM": [
+    2.0,
+    2.0
+   ]
+  },
+  "aerial_asphalt_01": {
+   "res": "1k",
+   "sizeM": [
+    30.0,
+    30.0
+   ]
+  },
+  "corrugated_iron": {
+   "res": "1k",
+   "sizeM": [
+    1.1200000047683716,
+    1.1200000047683716
+   ],
+   "arm": true
+  },
+  "rust_coarse_01": {
+   "res": "1k",
+   "sizeM": [
+    2.1999998092651367,
+    2.200000286102295
+   ]
+  },
+  "metal_plate": {
+   "res": "1k",
+   "sizeM": [
+    0.5,
+    0.5
+   ]
+  },
+  "bark_brown_02": {
+   "res": "1k",
+   "sizeM": [
+    0.9999990463256836,
+    0.999998927116394
+   ]
+  },
+  "grass_ground": {
+   "res": "2k",
+   "sizeM": [
+    2.51,
+    2.51
+   ]
+  },
+  "asphalt_02": {
+   "res": "2k",
+   "sizeM": [
+    3.0,
+    3.0
+   ]
+  },
+  "concrete_floor_02": {
+   "res": "1k",
+   "sizeM": [
+    2.0,
+    2.0
+   ]
+  },
+  "plastered_wall_04": {
+   "res": "1k",
+   "sizeM": [
+    3.2,
+    3.2
+   ]
+  },
+  "clay_roof_tiles_02": {
+   "res": "1k",
+   "sizeM": [
+    2.5,
+    2.5
+   ],
+   "arm": true
+  },
+  "roof_slates_02": {
+   "res": "1k",
+   "sizeM": [
+    3.0,
+    3.0
+   ],
+   "arm": true
+  },
+  "container_side": {
+   "res": "1k",
+   "sizeM": [
+    1.94,
+    1.94
+   ]
+  },
+  "snow_02": {
+   "res": "1k",
+   "sizeM": [
+    2.0,
+    2.0
+   ]
+  },
+  "forrest_ground_01": {
+   "res": "1k",
+   "sizeM": [
+    2.0,
+    2.0
+   ]
+  },
+  "cliff_side": {
+   "res": "1k",
+   "sizeM": [
+    1.83,
+    1.83
+   ]
+  },
+  "rusty_metal_04": {
+   "res": "1k",
+   "sizeM": [
+    2.0,
+    2.0
+   ]
+  },
+  "concrete_pavement": {
+   "res": "1k",
+   "sizeM": [
+    1.8,
+    1.8
+   ]
+  }
+ },
+ "skies": {
+  "kloofendal_38d_partly_cloudy_puresky": {
+   "res": "4k"
+  },
+  "kloofendal_48d_partly_cloudy_puresky": {
+   "res": "4k"
+  },
+  "kloppenheim_06_puresky": {
+   "res": "4k"
+  },
+  "belfast_sunset_puresky": {
+   "res": "2k"
+  },
+  "kloofendal_overcast_puresky": {
+   "res": "2k"
+  }
+ }
+}

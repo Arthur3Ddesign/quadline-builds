@@ -1,0 +1,43 @@
+# Asset credits
+
+Everything in this folder is CC0 (public domain): no credit is required, but we credit the sources anyway.
+Older textures and skies are listed in CREDITS.txt. Append new entries below (file, source URL, licence).
+
+## Added 7 Oct 2026 (shared graphics pass)
+
+### Textures (Poly Haven, CC0): https://polyhaven.com/license
+Each folder holds diff.jpg (colour), nor.jpg (OpenGL normal) and rough.jpg (roughness) or arm.jpg (AO, roughness, metal).
+
+| Folder | Source | Resolution |
+|---|---|---|
+| tex/grass_ground | https://polyhaven.com/a/grass_ground | 2K |
+| tex/asphalt_02 | https://polyhaven.com/a/asphalt_02 | 2K |
+| tex/concrete_floor_02 | https://polyhaven.com/a/concrete_floor_02 | 1K |
+| tex/plastered_wall_04 | https://polyhaven.com/a/plastered_wall_04 | 1K |
+| tex/clay_roof_tiles_02 | https://polyhaven.com/a/clay_roof_tiles_02 | 1K (diff, nor, arm) |
+| tex/roof_slates_02 | https://polyhaven.com/a/roof_slates_02 | 1K (diff, nor, arm) |
+| tex/container_side | https://polyhaven.com/a/container_side | 1K (colour made neutral grey so it can be painted any colour) |
+| tex/snow_02 | https://polyhaven.com/a/snow_02 | 1K |
+| tex/forrest_ground_01 | https://polyhaven.com/a/forrest_ground_01 | 1K |
+| tex/cliff_side | https://polyhaven.com/a/cliff_side | 1K |
+| tex/rusty_metal_04 | https://polyhaven.com/a/rusty_metal_04 | 1K |
+| tex/concrete_pavement | https://polyhaven.com/a/concrete_pavement | 1K |
+| tex/red_brick_03/arm.jpg | https://polyhaven.com/a/red_brick_03 | 1K AO/rough/metal |
+| tex/concrete_wall_003/arm.jpg | https://polyhaven.com/a/concrete_wall_003 | 1K AO/rough/metal |
+| tex/weathered_brown_planks/arm.jpg | https://polyhaven.com/a/weathered_brown_planks | 1K AO/rough/metal |
+| tex/corrugated_iron/arm.jpg | https://polyhaven.com/a/corrugated_iron | 1K AO/rough/metal |
+| tex/rock_face_03/arm.jpg | https://polyhaven.com/a/rock_face_03 | 1K AO/rough/metal |
+
+Download URLs follow the pattern https://dl.polyhaven.org/file/ph-assets/Textures/jpg/{res}/{id}/{id}_{map}_{res}.jpg
+(map = diff, nor_gl, rough, arm).
+
+### Sky (Poly Haven, CC0)
+- sky/qwantani_dusk_2_puresky.hdr (2K): https://polyhaven.com/a/qwantani_dusk_2_puresky
+  (https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/qwantani_dusk_2_puresky_2k.hdr). The dusk sky.
+
+### Foliage cards (ambientCG, CC0): https://docs.ambientcg.com/license/
+Leaf-cluster cards composed for the game from scanned leaf atlases (colour with cut-out alpha, and a
+normal map made from the atlases' OpenGL normals):
+- foliage/broadleaf.png, foliage/broadleaf_nor.jpg: from LeafSet024 (https://ambientcg.com/view?id=LeafSet024)
+- foliage/oak.png, foliage/oak_nor.jpg: from LeafSet016 (https://ambientcg.com/view?id=LeafSet016)
+- foliage/conifer.png, foliage/conifer_nor.jpg: from LeafSet019 (https://ambientcg.com/view?id=LeafSet019)
