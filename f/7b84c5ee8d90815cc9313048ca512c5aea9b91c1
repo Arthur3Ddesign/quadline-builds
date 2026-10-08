@@ -1,0 +1,135 @@
+# Asset credits
+
+Everything in this folder is CC0 (public domain): no credit is required, but we credit the sources anyway.
+Older textures and skies are listed in CREDITS.txt. Append new entries below (file, source URL, licence).
+
+## Added 7 Oct 2026 (shared graphics pass)
+
+### Textures (Poly Haven, CC0): https://polyhaven.com/license
+Each folder holds diff.jpg (colour), nor.jpg (OpenGL normal) and rough.jpg (roughness) or arm.jpg (AO, roughness, metal).
+
+| Folder | Source | Resolution |
+|---|---|---|
+| tex/grass_ground | https://polyhaven.com/a/grass_ground | 2K |
+| tex/asphalt_02 | https://polyhaven.com/a/asphalt_02 | 2K |
+| tex/concrete_floor_02 | https://polyhaven.com/a/concrete_floor_02 | 1K |
+| tex/plastered_wall_04 | https://polyhaven.com/a/plastered_wall_04 | 1K |
+| tex/clay_roof_tiles_02 | https://polyhaven.com/a/clay_roof_tiles_02 | 1K (diff, nor, arm) |
+| tex/roof_slates_02 | https://polyhaven.com/a/roof_slates_02 | 1K (diff, nor, arm) |
+| tex/container_side | https://polyhaven.com/a/container_side | 1K (colour made neutral grey so it can be painted any colour) |
+| tex/snow_02 | https://polyhaven.com/a/snow_02 | 1K |
+| tex/forrest_ground_01 | https://polyhaven.com/a/forrest_ground_01 | 1K |
+| tex/cliff_side | https://polyhaven.com/a/cliff_side | 1K |
+| tex/rusty_metal_04 | https://polyhaven.com/a/rusty_metal_04 | 1K |
+| tex/concrete_pavement | https://polyhaven.com/a/concrete_pavement | 1K |
+| tex/red_brick_03/arm.jpg | https://polyhaven.com/a/red_brick_03 | 1K AO/rough/metal |
+| tex/concrete_wall_003/arm.jpg | https://polyhaven.com/a/concrete_wall_003 | 1K AO/rough/metal |
+| tex/weathered_brown_planks/arm.jpg | https://polyhaven.com/a/weathered_brown_planks | 1K AO/rough/metal |
+| tex/corrugated_iron/arm.jpg | https://polyhaven.com/a/corrugated_iron | 1K AO/rough/metal |
+| tex/rock_face_03/arm.jpg | https://polyhaven.com/a/rock_face_03 | 1K AO/rough/metal |
+
+Download URLs follow the pattern https://dl.polyhaven.org/file/ph-assets/Textures/jpg/{res}/{id}/{id}_{map}_{res}.jpg
+(map = diff, nor_gl, rough, arm).
+
+### Sky (Poly Haven, CC0)
+- sky/qwantani_dusk_2_puresky.hdr (2K): https://polyhaven.com/a/qwantani_dusk_2_puresky
+  (https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/qwantani_dusk_2_puresky_2k.hdr). The dusk sky.
+
+### Foliage cards (ambientCG, CC0): https://docs.ambientcg.com/license/
+Leaf-cluster cards composed for the game from scanned leaf atlases (colour with cut-out alpha, and a
+normal map made from the atlases' OpenGL normals):
+- foliage/broadleaf.png, foliage/broadleaf_nor.jpg: from LeafSet024 (https://ambientcg.com/view?id=LeafSet024)
+- foliage/oak.png, foliage/oak_nor.jpg: from LeafSet016 (https://ambientcg.com/view?id=LeafSet016)
+- foliage/conifer.png, foliage/conifer_nor.jpg: from LeafSet019 (https://ambientcg.com/view?id=LeafSet019)
+
+## Added 7 Oct 2026 (photo-scanned props and trees)
+
+### Models (Poly Haven, CC0): https://polyhaven.com/license
+Photo-scanned and hand-made models from Poly Haven's glTF downloads (1K or 2K), processed for the game
+(scratchpad tools: simplified to two detail levels with meshoptimizer, pivots at the bottom centre, WebP
+textures, meshopt-compressed; colliders fitted to each model in src/world/props/catalog.ts). Logos and
+brand names were left out (the cement and compost bags, a branded plastic crate and jerry can weren't
+imported) or painted out (a small logo on the propane tank). Library: src/world/props/.
+
+| File | Source | Name | Authors | Size | Game props |
+|---|---|---|---|---|---|
+| props/bark_debris_01.glb | https://polyhaven.com/a/bark_debris_01 | Bark Debris 01 | Greg Zaal, Jenelle van Heerden | 0.96 MB | bark_debris_01, bark_debris_02, bark_debris_03, bark_debris_04 |
+| props/barrel_01.glb | https://polyhaven.com/a/Barrel_01 | Barrel_01 | Jorge Camacho | 0.39 MB | barrel_01 |
+| props/barrel_02.glb | https://polyhaven.com/a/Barrel_02 | Barrel 02 | Jorge Camacho | 0.19 MB | barrel_02 |
+| props/barrel_03.glb | https://polyhaven.com/a/barrel_03 | Barrel 03 | Serhii Khromov | 0.29 MB | barrel_03 |
+| props/barrel_stove.glb | https://polyhaven.com/a/barrel_stove | Barrel Stove | MP | 0.42 MB | barrel_stove |
+| props/boulder_01.glb | https://polyhaven.com/a/boulder_01 | Boulder 01 | Rico Cilliers | 2.36 MB | boulder_01 |
+| props/cardboard_box_01.glb | https://polyhaven.com/a/cardboard_box_01 | Cardboard Box 01 | Rahul Chaudhary | 0.28 MB | cardboard_box |
+| props/coast_rocks_05.glb | https://polyhaven.com/a/coast_rocks_05 | Coast Rocks 05 | Rob Tuytel | 2.56 MB | coast_rocks_05 |
+| props/concrete_road_barrier.glb | https://polyhaven.com/a/concrete_road_barrier | Concrete Road Barrier | Amal Kumar | 0.49 MB | road_barrier_01 |
+| props/concrete_road_barrier_02.glb | https://polyhaven.com/a/concrete_road_barrier_02 | Concrete Road Barrier 02 | Amal Kumar | 0.53 MB | road_barrier_02 |
+| props/covered_car.glb | https://polyhaven.com/a/covered_car | Covered Car | MP | 0.38 MB | covered_car |
+| props/dead_quiver_trunk.glb | https://polyhaven.com/a/dead_quiver_trunk | Dead Quiver Trunk | James Ray Cock, Dario Barresi, Rico Cilliers | 0.37 MB | dead_trunk |
+| props/dead_tree_trunk.glb | https://polyhaven.com/a/dead_tree_trunk | Dead Tree Trunk | Rob Tuytel | 0.56 MB | log_01 |
+| props/dead_tree_trunk_02.glb | https://polyhaven.com/a/dead_tree_trunk_02 | Dead Tree Trunk 02 | Jenelle van Heerden, Rico Cilliers | 0.79 MB | log_02 |
+| props/dry_branches_medium_01.glb | https://polyhaven.com/a/dry_branches_medium_01 | Dry Branches Medium 01 | Rico Cilliers | 0.75 MB | branches_01, branches_02, branches_03 |
+| props/fern_02.glb | https://polyhaven.com/a/fern_02 | Fern 02 | Rob Tuytel, Rico Cilliers | 0.29 MB | fern_a, fern_b, fern_c, fern_d |
+| props/fire_hydrant.glb | https://polyhaven.com/a/fire_hydrant | Fire Hydrant | Gonçalo Felício | 0.17 MB | hydrant |
+| props/hand_truck.glb | https://polyhaven.com/a/hand_truck | Hand Truck | Mutanzom3D | 0.23 MB | hand_truck |
+| props/lateral_sea_marker.glb | https://polyhaven.com/a/lateral_sea_marker | Lateral Sea Marker | James Ray Cock, Kuutti Siitonen | 0.42 MB | sea_marker |
+| props/lifebuoy.glb | https://polyhaven.com/a/lifebuoy | Lifebuoy | Hank Kaamura | 0.17 MB | lifebuoy |
+| props/metal_jerrycan.glb | https://polyhaven.com/a/metal_jerrycan | Metal Jerrycan | Sean Buckley | 0.16 MB | jerrycan |
+| props/metal_tool_chest.glb | https://polyhaven.com/a/metal_tool_chest | Metal Tool Chest | Yann Kervran, John Hutcheson | 0.17 MB | tool_chest |
+| props/metal_trash_can.glb | https://polyhaven.com/a/metal_trash_can | Metal Trash Can | GurJas Studios | 0.94 MB | trash_can, trash_can_rust |
+| props/mountainside.glb | https://polyhaven.com/a/mountainside | Mountainside | Dario Barresi, Rico Cilliers | 2.43 MB | mountainside |
+| props/namaqualand_boulder_02.glb | https://polyhaven.com/a/namaqualand_boulder_02 | Namaqualand Boulder 02 | Greg Zaal, Rico Cilliers | 2.14 MB | boulder_02 |
+| props/namaqualand_boulder_03.glb | https://polyhaven.com/a/namaqualand_boulder_03 | Namaqualand Boulder 03 | Jenelle van Heerden, Dario Barresi | 1.51 MB | boulder_03 |
+| props/namaqualand_boulder_04.glb | https://polyhaven.com/a/namaqualand_boulder_04 | Namaqualand Boulder 04 | Jenelle van Heerden | 1.60 MB | boulder_04 |
+| props/namaqualand_boulder_05.glb | https://polyhaven.com/a/namaqualand_boulder_05 | Namaqualand Boulder 05 | Jenelle van Heerden, Dario Barresi | 0.66 MB | boulder_05 |
+| props/namaqualand_boulder_06.glb | https://polyhaven.com/a/namaqualand_boulder_06 | Namaqualand Boulder 06 | Greg Zaal, Jenelle van Heerden | 0.68 MB | boulder_06 |
+| props/namaqualand_boulders_01.glb | https://polyhaven.com/a/namaqualand_boulders_01 | Namaqualand Boulders 01 | Greg Zaal, Jenelle van Heerden | 0.65 MB | rock_small_01, rock_small_02 |
+| props/namaqualand_cliff_01.glb | https://polyhaven.com/a/namaqualand_cliff_01 | Namaqualand Cliff 01 | Jenelle van Heerden, Rico Cilliers | 1.59 MB | cliff_01 |
+| props/namaqualand_cliff_02.glb | https://polyhaven.com/a/namaqualand_cliff_02 | Namaqualand Cliff 02 | Dario Barresi, Rico Cilliers | 1.91 MB | cliff_02 |
+| props/namaqualand_rocks_01.glb | https://polyhaven.com/a/namaqualand_rocks_01 | Namaqualand Rocks 01 | Greg Zaal, Jenelle van Heerden | 0.72 MB | rock_flat_01, rock_flat_02, rock_flat_03, rock_flat_04 |
+| props/ocean_buoy.glb | https://polyhaven.com/a/ocean_buoy | Ocean Buoy | Mateusz Sadek | 0.62 MB | buoy |
+| props/old_military_crate.glb | https://polyhaven.com/a/old_military_crate | Old Military Crate | Jack Mava | 0.56 MB | crate_long_01, crate_long_02 |
+| props/old_tyre.glb | https://polyhaven.com/a/old_tyre | Old Tyre | MP | 0.14 MB | tyre |
+| props/pine_roots.glb | https://polyhaven.com/a/pine_roots | Pine Roots | Rob Tuytel | 1.65 MB | roots_03, roots_04 |
+| props/plastic_container.glb | https://polyhaven.com/a/plastic_container | Plastic Container | PierreB3D | 0.10 MB | plastic_box |
+| props/plastic_crate_03.glb | https://polyhaven.com/a/plastic_crate_03 | Plastic Crate 03 | Pacific Penguin | 0.20 MB | plastic_crate |
+| props/portable_generator.glb | https://polyhaven.com/a/portable_generator | Portable Generator | James Ray Cock | 0.60 MB | generator |
+| props/portable_welding_cart.glb | https://polyhaven.com/a/portable_welding_cart | Portable Welding Cart | Georgii Gorbunov | 0.37 MB | welding_cart |
+| props/propane_tank.glb | https://polyhaven.com/a/propane_tank | Propane Tank | Slinc | 0.12 MB | gas_bottle |
+| props/rock_07.glb | https://polyhaven.com/a/rock_07 | Rock 07 | Jenelle van Heerden | 0.12 MB | rock_07 |
+| props/rock_face_01.glb | https://polyhaven.com/a/rock_face_01 | Rock Face 01 | Dario Barresi | 1.96 MB | rock_face_01 |
+| props/rock_face_02.glb | https://polyhaven.com/a/rock_face_02 | Rock Face 02 | Dario Barresi, Rico Cilliers | 2.05 MB | rock_face_02 |
+| props/rock_moss_set_01.glb | https://polyhaven.com/a/rock_moss_set_01 | Rock Moss Set 01 | Kless Gyzen | 1.40 MB | moss_rock_01, moss_rock_02, moss_rock_03, moss_rock_04, moss_rock_05, moss_rock_06 |
+| props/rock_moss_set_02.glb | https://polyhaven.com/a/rock_moss_set_02 | Rock Moss Set 02 | Kless Gyzen | 1.61 MB | moss_rock_07, moss_rock_08, moss_rock_09, moss_rock_10, moss_rock_11, moss_rock_12, moss_rock_13 |
+| props/root_cluster_01.glb | https://polyhaven.com/a/root_cluster_01 | Root Cluster 01 | Jenelle van Heerden, Rico Cilliers | 0.84 MB | roots_01 |
+| props/root_cluster_02.glb | https://polyhaven.com/a/root_cluster_02 | Root Cluster 02 | Jenelle van Heerden | 0.51 MB | roots_02 |
+| props/rusted_wheel_rim_01.glb | https://polyhaven.com/a/rusted_wheel_rim_01 | Rusted Wheel Rim 01 | John Hutcheson | 0.14 MB | wheel_rim |
+| props/sand_rocks_small_01.glb | https://polyhaven.com/a/sand_rocks_small_01 | Sand Rocks Small 01 | Rob Tuytel, Rico Cilliers | 0.68 MB | sand_rocks |
+| props/shrub_02.glb | https://polyhaven.com/a/shrub_02 | Shrub 02 | Rico Cilliers | 0.65 MB | shrub_a, shrub_b, shrub_c, shrub_d |
+| props/single_root.glb | https://polyhaven.com/a/single_root | Single Root | Jenelle van Heerden | 0.43 MB | root_single |
+| props/small_lpg_tank.glb | https://polyhaven.com/a/small_lpg_tank | Small Lpg Tank | Ulan Cabanilla | 0.18 MB | gas_bottle_02 |
+| props/street_lamp_01.glb | https://polyhaven.com/a/street_lamp_01 | Street Lamp 01 | Josh Dean | 0.28 MB | street_lamp_01 |
+| props/street_lamp_02.glb | https://polyhaven.com/a/street_lamp_02 | Street Lamp 02 | Josh Dean | 0.28 MB | street_lamp_02 |
+| props/tool_cart.glb | https://polyhaven.com/a/tool_cart | Tool Cart | Savva Zakharov | 0.48 MB | tool_cart |
+| props/trashbag.glb | https://polyhaven.com/a/trashbag | Trashbag | Benny Weimer | 0.13 MB | trash_bag |
+| props/tree_stump_01.glb | https://polyhaven.com/a/tree_stump_01 | Tree Stump 01 | Rob Tuytel | 0.77 MB | stump_01 |
+| props/tree_stump_02.glb | https://polyhaven.com/a/tree_stump_02 | Tree Stump 02 | Rob Tuytel | 0.81 MB | stump_02 |
+| props/utility_box_01.glb | https://polyhaven.com/a/utility_box_01 | Utility Box 01 | James Ray Cock | 0.11 MB | utility_box_01 |
+| props/utility_box_02.glb | https://polyhaven.com/a/utility_box_02 | Utility Box 02 | James Ray Cock | 0.13 MB | utility_box_02 |
+| props/water_manhole_cover.glb | https://polyhaven.com/a/water_manhole_cover | Water Manhole Cover | Raunox | 0.16 MB | manhole |
+| props/wine_barrel_01.glb | https://polyhaven.com/a/wine_barrel_01 | Wine Barrel 01 | James Ray Cock | 0.36 MB | barrel_wood |
+| props/wooden_barrels_01.glb | https://polyhaven.com/a/wooden_barrels_01 | Wooden Barrels 01 | James Ray Cock | 1.18 MB | barrel_staves, barrel_wood_02, barrel_wood_03 |
+| props/wooden_bucket_01.glb | https://polyhaven.com/a/wooden_bucket_01 | Wooden Bucket 01 | James Ray Cock | 0.15 MB | bucket |
+| props/wooden_crate_01.glb | https://polyhaven.com/a/wooden_crate_01 | Wooden Crate 01 | James Ray Cock | 0.35 MB | crate_01 |
+| props/wooden_crate_02.glb | https://polyhaven.com/a/wooden_crate_02 | Wooden Crate 02 | James Ray Cock, Jurita Burger | 0.35 MB | crate_02 |
+| props/wooden_ladder.glb | https://polyhaven.com/a/wooden_ladder | Wooden Ladder | Miroslav Turura | 0.18 MB | ladder |
+| props/wooden_military_crate.glb | https://polyhaven.com/a/wooden_military_crate | Wooden Military Crate | Prabhjinder Singh | 0.49 MB | crate_03 |
+| props/wooden_picnic_table.glb | https://polyhaven.com/a/wooden_picnic_table | Wooden Picnic Table | Ulan Cabanilla | 0.55 MB | picnic_table |
+
+Total: 71 files, 49.4 MB.
+
+### Trees (procedural, baked for the game)
+- trees/trees.glb (2.8 MB): branch structures generated with ez-tree by Dan Greenheck
+  (https://github.com/dgreenheck/ez-tree, MIT licence; presets oak_medium, aspen_medium, pine_medium and
+  oak_small, our seeds and leaf settings) and baked to geometry only. ez-tree's own bark and leaf images are
+  not used: the trees wear the game's CC0 photo bark (tex/bark_brown_02, Poly Haven) and the ambientCG leaf
+  cards above (foliage/*.png). See src/world/props/trees.ts.

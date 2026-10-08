@@ -1,0 +1,1198 @@
+{
+ "textures": {
+  "aerial_grass_rock": {
+   "res": "2k",
+   "sizeM": [
+    15.0,
+    15.0
+   ]
+  },
+  "brown_mud_dry": {
+   "res": "2k",
+   "sizeM": [
+    1.299996018409729,
+    1.299996018409729
+   ]
+  },
+  "rock_face_03": {
+   "res": "2k",
+   "sizeM": [
+    2.6999995708465576,
+    2.6999995708465576
+   ],
+   "arm": true
+  },
+  "sandstone_cracks": {
+   "res": "2k",
+   "sizeM": [
+    2.0,
+    2.0
+   ]
+  },
+  "concrete_floor_worn_001": {
+   "res": "2k",
+   "sizeM": [
+    3.0,
+    3.000000238418579
+   ]
+  },
+  "concrete_wall_003": {
+   "res": "2k",
+   "sizeM": [
+    3.0,
+    3.000000238418579
+   ],
+   "arm": true
+  },
+  "red_brick_03": {
+   "res": "2k",
+   "sizeM": [
+    1.0,
+    1.0
+   ],
+   "arm": true
+  },
+  "weathered_brown_planks": {
+   "res": "2k",
+   "sizeM": [
+    1.7999999523162842,
+    1.7999999523162842
+   ],
+   "arm": true
+  },
+  "gravelly_sand": {
+   "res": "1k",
+   "sizeM": [
+    2.4800000190734863,
+    2.4800000190734863
+   ]
+  },
+  "red_laterite_soil_stones": {
+   "res": "1k",
+   "sizeM": [
+    2.0,
+    2.0
+   ]
+  },
+  "aerial_asphalt_01": {
+   "res": "1k",
+   "sizeM": [
+    30.0,
+    30.0
+   ]
+  },
+  "corrugated_iron": {
+   "res": "1k",
+   "sizeM": [
+    1.1200000047683716,
+    1.1200000047683716
+   ],
+   "arm": true
+  },
+  "rust_coarse_01": {
+   "res": "1k",
+   "sizeM": [
+    2.1999998092651367,
+    2.200000286102295
+   ]
+  },
+  "metal_plate": {
+   "res": "1k",
+   "sizeM": [
+    0.5,
+    0.5
+   ]
+  },
+  "bark_brown_02": {
+   "res": "1k",
+   "sizeM": [
+    0.9999990463256836,
+    0.999998927116394
+   ]
+  },
+  "grass_ground": {
+   "res": "2k",
+   "sizeM": [
+    2.51,
+    2.51
+   ]
+  },
+  "asphalt_02": {
+   "res": "2k",
+   "sizeM": [
+    3.0,
+    3.0
+   ]
+  },
+  "concrete_floor_02": {
+   "res": "1k",
+   "sizeM": [
+    2.0,
+    2.0
+   ]
+  },
+  "plastered_wall_04": {
+   "res": "1k",
+   "sizeM": [
+    3.2,
+    3.2
+   ]
+  },
+  "clay_roof_tiles_02": {
+   "res": "1k",
+   "sizeM": [
+    2.5,
+    2.5
+   ],
+   "arm": true
+  },
+  "roof_slates_02": {
+   "res": "1k",
+   "sizeM": [
+    3.0,
+    3.0
+   ],
+   "arm": true
+  },
+  "container_side": {
+   "res": "1k",
+   "sizeM": [
+    1.94,
+    1.94
+   ]
+  },
+  "snow_02": {
+   "res": "1k",
+   "sizeM": [
+    2.0,
+    2.0
+   ]
+  },
+  "forrest_ground_01": {
+   "res": "1k",
+   "sizeM": [
+    2.0,
+    2.0
+   ]
+  },
+  "cliff_side": {
+   "res": "1k",
+   "sizeM": [
+    1.83,
+    1.83
+   ]
+  },
+  "rusty_metal_04": {
+   "res": "1k",
+   "sizeM": [
+    2.0,
+    2.0
+   ]
+  },
+  "concrete_pavement": {
+   "res": "1k",
+   "sizeM": [
+    1.8,
+    1.8
+   ]
+  }
+ },
+ "skies": {
+  "kloofendal_38d_partly_cloudy_puresky": {
+   "res": "4k"
+  },
+  "kloofendal_48d_partly_cloudy_puresky": {
+   "res": "4k"
+  },
+  "kloppenheim_06_puresky": {
+   "res": "4k"
+  },
+  "belfast_sunset_puresky": {
+   "res": "2k"
+  },
+  "kloofendal_overcast_puresky": {
+   "res": "2k"
+  }
+ },
+ "models": {
+  "bark_debris_01": {
+   "src": "bark_debris_01",
+   "url": "https://polyhaven.com/a/bark_debris_01",
+   "name": "Bark Debris 01",
+   "authors": [
+    "Greg Zaal",
+    "Jenelle van Heerden"
+   ],
+   "license": "CC0",
+   "bytes": 960788,
+   "props": [
+    "bark_debris_01",
+    "bark_debris_02",
+    "bark_debris_03",
+    "bark_debris_04"
+   ]
+  },
+  "barrel_01": {
+   "src": "Barrel_01",
+   "url": "https://polyhaven.com/a/Barrel_01",
+   "name": "Barrel_01",
+   "authors": [
+    "Jorge Camacho"
+   ],
+   "license": "CC0",
+   "bytes": 389772,
+   "props": [
+    "barrel_01"
+   ]
+  },
+  "barrel_02": {
+   "src": "Barrel_02",
+   "url": "https://polyhaven.com/a/Barrel_02",
+   "name": "Barrel 02",
+   "authors": [
+    "Jorge Camacho"
+   ],
+   "license": "CC0",
+   "bytes": 191832,
+   "props": [
+    "barrel_02"
+   ]
+  },
+  "barrel_03": {
+   "src": "barrel_03",
+   "url": "https://polyhaven.com/a/barrel_03",
+   "name": "Barrel 03",
+   "authors": [
+    "Serhii Khromov"
+   ],
+   "license": "CC0",
+   "bytes": 294676,
+   "props": [
+    "barrel_03"
+   ]
+  },
+  "barrel_stove": {
+   "src": "barrel_stove",
+   "url": "https://polyhaven.com/a/barrel_stove",
+   "name": "Barrel Stove",
+   "authors": [
+    "MP"
+   ],
+   "license": "CC0",
+   "bytes": 415640,
+   "props": [
+    "barrel_stove"
+   ]
+  },
+  "boulder_01": {
+   "src": "boulder_01",
+   "url": "https://polyhaven.com/a/boulder_01",
+   "name": "Boulder 01",
+   "authors": [
+    "Rico Cilliers"
+   ],
+   "license": "CC0",
+   "bytes": 2364532,
+   "props": [
+    "boulder_01"
+   ]
+  },
+  "cardboard_box_01": {
+   "src": "cardboard_box_01",
+   "url": "https://polyhaven.com/a/cardboard_box_01",
+   "name": "Cardboard Box 01",
+   "authors": [
+    "Rahul Chaudhary"
+   ],
+   "license": "CC0",
+   "bytes": 281772,
+   "props": [
+    "cardboard_box"
+   ]
+  },
+  "coast_rocks_05": {
+   "src": "coast_rocks_05",
+   "url": "https://polyhaven.com/a/coast_rocks_05",
+   "name": "Coast Rocks 05",
+   "authors": [
+    "Rob Tuytel"
+   ],
+   "license": "CC0",
+   "bytes": 2556516,
+   "props": [
+    "coast_rocks_05"
+   ]
+  },
+  "concrete_road_barrier": {
+   "src": "concrete_road_barrier",
+   "url": "https://polyhaven.com/a/concrete_road_barrier",
+   "name": "Concrete Road Barrier",
+   "authors": [
+    "Amal Kumar"
+   ],
+   "license": "CC0",
+   "bytes": 491100,
+   "props": [
+    "road_barrier_01"
+   ]
+  },
+  "concrete_road_barrier_02": {
+   "src": "concrete_road_barrier_02",
+   "url": "https://polyhaven.com/a/concrete_road_barrier_02",
+   "name": "Concrete Road Barrier 02",
+   "authors": [
+    "Amal Kumar"
+   ],
+   "license": "CC0",
+   "bytes": 533344,
+   "props": [
+    "road_barrier_02"
+   ]
+  },
+  "covered_car": {
+   "src": "covered_car",
+   "url": "https://polyhaven.com/a/covered_car",
+   "name": "Covered Car",
+   "authors": [
+    "MP"
+   ],
+   "license": "CC0",
+   "bytes": 382348,
+   "props": [
+    "covered_car"
+   ]
+  },
+  "dead_quiver_trunk": {
+   "src": "dead_quiver_trunk",
+   "url": "https://polyhaven.com/a/dead_quiver_trunk",
+   "name": "Dead Quiver Trunk",
+   "authors": [
+    "James Ray Cock",
+    "Dario Barresi",
+    "Rico Cilliers"
+   ],
+   "license": "CC0",
+   "bytes": 371312,
+   "props": [
+    "dead_trunk"
+   ]
+  },
+  "dead_tree_trunk": {
+   "src": "dead_tree_trunk",
+   "url": "https://polyhaven.com/a/dead_tree_trunk",
+   "name": "Dead Tree Trunk",
+   "authors": [
+    "Rob Tuytel"
+   ],
+   "license": "CC0",
+   "bytes": 559412,
+   "props": [
+    "log_01"
+   ]
+  },
+  "dead_tree_trunk_02": {
+   "src": "dead_tree_trunk_02",
+   "url": "https://polyhaven.com/a/dead_tree_trunk_02",
+   "name": "Dead Tree Trunk 02",
+   "authors": [
+    "Jenelle van Heerden",
+    "Rico Cilliers"
+   ],
+   "license": "CC0",
+   "bytes": 787948,
+   "props": [
+    "log_02"
+   ]
+  },
+  "dry_branches_medium_01": {
+   "src": "dry_branches_medium_01",
+   "url": "https://polyhaven.com/a/dry_branches_medium_01",
+   "name": "Dry Branches Medium 01",
+   "authors": [
+    "Rico Cilliers"
+   ],
+   "license": "CC0",
+   "bytes": 749936,
+   "props": [
+    "branches_01",
+    "branches_02",
+    "branches_03"
+   ]
+  },
+  "fern_02": {
+   "src": "fern_02",
+   "url": "https://polyhaven.com/a/fern_02",
+   "name": "Fern 02",
+   "authors": [
+    "Rob Tuytel",
+    "Rico Cilliers"
+   ],
+   "license": "CC0",
+   "bytes": 289268,
+   "props": [
+    "fern_a",
+    "fern_b",
+    "fern_c",
+    "fern_d"
+   ]
+  },
+  "fire_hydrant": {
+   "src": "fire_hydrant",
+   "url": "https://polyhaven.com/a/fire_hydrant",
+   "name": "Fire Hydrant",
+   "authors": [
+    "Gonçalo Felício"
+   ],
+   "license": "CC0",
+   "bytes": 168776,
+   "props": [
+    "hydrant"
+   ]
+  },
+  "hand_truck": {
+   "src": "hand_truck",
+   "url": "https://polyhaven.com/a/hand_truck",
+   "name": "Hand Truck",
+   "authors": [
+    "Mutanzom3D"
+   ],
+   "license": "CC0",
+   "bytes": 228764,
+   "props": [
+    "hand_truck"
+   ]
+  },
+  "lateral_sea_marker": {
+   "src": "lateral_sea_marker",
+   "url": "https://polyhaven.com/a/lateral_sea_marker",
+   "name": "Lateral Sea Marker",
+   "authors": [
+    "James Ray Cock",
+    "Kuutti Siitonen"
+   ],
+   "license": "CC0",
+   "bytes": 421244,
+   "props": [
+    "sea_marker"
+   ]
+  },
+  "lifebuoy": {
+   "src": "lifebuoy",
+   "url": "https://polyhaven.com/a/lifebuoy",
+   "name": "Lifebuoy",
+   "authors": [
+    "Hank Kaamura"
+   ],
+   "license": "CC0",
+   "bytes": 166384,
+   "props": [
+    "lifebuoy"
+   ]
+  },
+  "metal_jerrycan": {
+   "src": "metal_jerrycan",
+   "url": "https://polyhaven.com/a/metal_jerrycan",
+   "name": "Metal Jerrycan",
+   "authors": [
+    "Sean Buckley"
+   ],
+   "license": "CC0",
+   "bytes": 164968,
+   "props": [
+    "jerrycan"
+   ]
+  },
+  "metal_tool_chest": {
+   "src": "metal_tool_chest",
+   "url": "https://polyhaven.com/a/metal_tool_chest",
+   "name": "Metal Tool Chest",
+   "authors": [
+    "Yann Kervran",
+    "John Hutcheson"
+   ],
+   "license": "CC0",
+   "bytes": 166184,
+   "props": [
+    "tool_chest"
+   ]
+  },
+  "metal_trash_can": {
+   "src": "metal_trash_can",
+   "url": "https://polyhaven.com/a/metal_trash_can",
+   "name": "Metal Trash Can",
+   "authors": [
+    "GurJas Studios"
+   ],
+   "license": "CC0",
+   "bytes": 941388,
+   "props": [
+    "trash_can",
+    "trash_can_rust"
+   ]
+  },
+  "mountainside": {
+   "src": "mountainside",
+   "url": "https://polyhaven.com/a/mountainside",
+   "name": "Mountainside",
+   "authors": [
+    "Dario Barresi",
+    "Rico Cilliers"
+   ],
+   "license": "CC0",
+   "bytes": 2432648,
+   "props": [
+    "mountainside"
+   ]
+  },
+  "namaqualand_boulder_02": {
+   "src": "namaqualand_boulder_02",
+   "url": "https://polyhaven.com/a/namaqualand_boulder_02",
+   "name": "Namaqualand Boulder 02",
+   "authors": [
+    "Greg Zaal",
+    "Rico Cilliers"
+   ],
+   "license": "CC0",
+   "bytes": 2142556,
+   "props": [
+    "boulder_02"
+   ]
+  },
+  "namaqualand_boulder_03": {
+   "src": "namaqualand_boulder_03",
+   "url": "https://polyhaven.com/a/namaqualand_boulder_03",
+   "name": "Namaqualand Boulder 03",
+   "authors": [
+    "Jenelle van Heerden",
+    "Dario Barresi"
+   ],
+   "license": "CC0",
+   "bytes": 1509984,
+   "props": [
+    "boulder_03"
+   ]
+  },
+  "namaqualand_boulder_04": {
+   "src": "namaqualand_boulder_04",
+   "url": "https://polyhaven.com/a/namaqualand_boulder_04",
+   "name": "Namaqualand Boulder 04",
+   "authors": [
+    "Jenelle van Heerden"
+   ],
+   "license": "CC0",
+   "bytes": 1599780,
+   "props": [
+    "boulder_04"
+   ]
+  },
+  "namaqualand_boulder_05": {
+   "src": "namaqualand_boulder_05",
+   "url": "https://polyhaven.com/a/namaqualand_boulder_05",
+   "name": "Namaqualand Boulder 05",
+   "authors": [
+    "Jenelle van Heerden",
+    "Dario Barresi"
+   ],
+   "license": "CC0",
+   "bytes": 658564,
+   "props": [
+    "boulder_05"
+   ]
+  },
+  "namaqualand_boulder_06": {
+   "src": "namaqualand_boulder_06",
+   "url": "https://polyhaven.com/a/namaqualand_boulder_06",
+   "name": "Namaqualand Boulder 06",
+   "authors": [
+    "Greg Zaal",
+    "Jenelle van Heerden"
+   ],
+   "license": "CC0",
+   "bytes": 677620,
+   "props": [
+    "boulder_06"
+   ]
+  },
+  "namaqualand_boulders_01": {
+   "src": "namaqualand_boulders_01",
+   "url": "https://polyhaven.com/a/namaqualand_boulders_01",
+   "name": "Namaqualand Boulders 01",
+   "authors": [
+    "Greg Zaal",
+    "Jenelle van Heerden"
+   ],
+   "license": "CC0",
+   "bytes": 651756,
+   "props": [
+    "rock_small_01",
+    "rock_small_02"
+   ]
+  },
+  "namaqualand_cliff_01": {
+   "src": "namaqualand_cliff_01",
+   "url": "https://polyhaven.com/a/namaqualand_cliff_01",
+   "name": "Namaqualand Cliff 01",
+   "authors": [
+    "Jenelle van Heerden",
+    "Rico Cilliers"
+   ],
+   "license": "CC0",
+   "bytes": 1592032,
+   "props": [
+    "cliff_01"
+   ]
+  },
+  "namaqualand_cliff_02": {
+   "src": "namaqualand_cliff_02",
+   "url": "https://polyhaven.com/a/namaqualand_cliff_02",
+   "name": "Namaqualand Cliff 02",
+   "authors": [
+    "Dario Barresi",
+    "Rico Cilliers"
+   ],
+   "license": "CC0",
+   "bytes": 1910028,
+   "props": [
+    "cliff_02"
+   ]
+  },
+  "namaqualand_rocks_01": {
+   "src": "namaqualand_rocks_01",
+   "url": "https://polyhaven.com/a/namaqualand_rocks_01",
+   "name": "Namaqualand Rocks 01",
+   "authors": [
+    "Greg Zaal",
+    "Jenelle van Heerden"
+   ],
+   "license": "CC0",
+   "bytes": 717120,
+   "props": [
+    "rock_flat_01",
+    "rock_flat_02",
+    "rock_flat_03",
+    "rock_flat_04"
+   ]
+  },
+  "ocean_buoy": {
+   "src": "ocean_buoy",
+   "url": "https://polyhaven.com/a/ocean_buoy",
+   "name": "Ocean Buoy",
+   "authors": [
+    "Mateusz Sadek"
+   ],
+   "license": "CC0",
+   "bytes": 617780,
+   "props": [
+    "buoy"
+   ]
+  },
+  "old_military_crate": {
+   "src": "old_military_crate",
+   "url": "https://polyhaven.com/a/old_military_crate",
+   "name": "Old Military Crate",
+   "authors": [
+    "Jack Mava"
+   ],
+   "license": "CC0",
+   "bytes": 555344,
+   "props": [
+    "crate_long_01",
+    "crate_long_02"
+   ]
+  },
+  "old_tyre": {
+   "src": "old_tyre",
+   "url": "https://polyhaven.com/a/old_tyre",
+   "name": "Old Tyre",
+   "authors": [
+    "MP"
+   ],
+   "license": "CC0",
+   "bytes": 141196,
+   "props": [
+    "tyre"
+   ]
+  },
+  "pine_roots": {
+   "src": "pine_roots",
+   "url": "https://polyhaven.com/a/pine_roots",
+   "name": "Pine Roots",
+   "authors": [
+    "Rob Tuytel"
+   ],
+   "license": "CC0",
+   "bytes": 1650488,
+   "props": [
+    "roots_03",
+    "roots_04"
+   ]
+  },
+  "plastic_container": {
+   "src": "plastic_container",
+   "url": "https://polyhaven.com/a/plastic_container",
+   "name": "Plastic Container",
+   "authors": [
+    "PierreB3D"
+   ],
+   "license": "CC0",
+   "bytes": 102352,
+   "props": [
+    "plastic_box"
+   ]
+  },
+  "plastic_crate_03": {
+   "src": "plastic_crate_03",
+   "url": "https://polyhaven.com/a/plastic_crate_03",
+   "name": "Plastic Crate 03",
+   "authors": [
+    "Pacific Penguin"
+   ],
+   "license": "CC0",
+   "bytes": 197376,
+   "props": [
+    "plastic_crate"
+   ]
+  },
+  "portable_generator": {
+   "src": "portable_generator",
+   "url": "https://polyhaven.com/a/portable_generator",
+   "name": "Portable Generator",
+   "authors": [
+    "James Ray Cock"
+   ],
+   "license": "CC0",
+   "bytes": 600708,
+   "props": [
+    "generator"
+   ]
+  },
+  "portable_welding_cart": {
+   "src": "portable_welding_cart",
+   "url": "https://polyhaven.com/a/portable_welding_cart",
+   "name": "Portable Welding Cart",
+   "authors": [
+    "Georgii Gorbunov"
+   ],
+   "license": "CC0",
+   "bytes": 369640,
+   "props": [
+    "welding_cart"
+   ]
+  },
+  "propane_tank": {
+   "src": "propane_tank",
+   "url": "https://polyhaven.com/a/propane_tank",
+   "name": "Propane Tank",
+   "authors": [
+    "Slinc"
+   ],
+   "license": "CC0",
+   "bytes": 121300,
+   "props": [
+    "gas_bottle"
+   ]
+  },
+  "rock_07": {
+   "src": "rock_07",
+   "url": "https://polyhaven.com/a/rock_07",
+   "name": "Rock 07",
+   "authors": [
+    "Jenelle van Heerden"
+   ],
+   "license": "CC0",
+   "bytes": 116580,
+   "props": [
+    "rock_07"
+   ]
+  },
+  "rock_face_01": {
+   "src": "rock_face_01",
+   "url": "https://polyhaven.com/a/rock_face_01",
+   "name": "Rock Face 01",
+   "authors": [
+    "Dario Barresi"
+   ],
+   "license": "CC0",
+   "bytes": 1962200,
+   "props": [
+    "rock_face_01"
+   ]
+  },
+  "rock_face_02": {
+   "src": "rock_face_02",
+   "url": "https://polyhaven.com/a/rock_face_02",
+   "name": "Rock Face 02",
+   "authors": [
+    "Dario Barresi",
+    "Rico Cilliers"
+   ],
+   "license": "CC0",
+   "bytes": 2049264,
+   "props": [
+    "rock_face_02"
+   ]
+  },
+  "rock_moss_set_01": {
+   "src": "rock_moss_set_01",
+   "url": "https://polyhaven.com/a/rock_moss_set_01",
+   "name": "Rock Moss Set 01",
+   "authors": [
+    "Kless Gyzen"
+   ],
+   "license": "CC0",
+   "bytes": 1402372,
+   "props": [
+    "moss_rock_01",
+    "moss_rock_02",
+    "moss_rock_03",
+    "moss_rock_04",
+    "moss_rock_05",
+    "moss_rock_06"
+   ]
+  },
+  "rock_moss_set_02": {
+   "src": "rock_moss_set_02",
+   "url": "https://polyhaven.com/a/rock_moss_set_02",
+   "name": "Rock Moss Set 02",
+   "authors": [
+    "Kless Gyzen"
+   ],
+   "license": "CC0",
+   "bytes": 1607976,
+   "props": [
+    "moss_rock_07",
+    "moss_rock_08",
+    "moss_rock_09",
+    "moss_rock_10",
+    "moss_rock_11",
+    "moss_rock_12",
+    "moss_rock_13"
+   ]
+  },
+  "root_cluster_01": {
+   "src": "root_cluster_01",
+   "url": "https://polyhaven.com/a/root_cluster_01",
+   "name": "Root Cluster 01",
+   "authors": [
+    "Jenelle van Heerden",
+    "Rico Cilliers"
+   ],
+   "license": "CC0",
+   "bytes": 835732,
+   "props": [
+    "roots_01"
+   ]
+  },
+  "root_cluster_02": {
+   "src": "root_cluster_02",
+   "url": "https://polyhaven.com/a/root_cluster_02",
+   "name": "Root Cluster 02",
+   "authors": [
+    "Jenelle van Heerden"
+   ],
+   "license": "CC0",
+   "bytes": 506724,
+   "props": [
+    "roots_02"
+   ]
+  },
+  "rusted_wheel_rim_01": {
+   "src": "rusted_wheel_rim_01",
+   "url": "https://polyhaven.com/a/rusted_wheel_rim_01",
+   "name": "Rusted Wheel Rim 01",
+   "authors": [
+    "John Hutcheson"
+   ],
+   "license": "CC0",
+   "bytes": 143512,
+   "props": [
+    "wheel_rim"
+   ]
+  },
+  "sand_rocks_small_01": {
+   "src": "sand_rocks_small_01",
+   "url": "https://polyhaven.com/a/sand_rocks_small_01",
+   "name": "Sand Rocks Small 01",
+   "authors": [
+    "Rob Tuytel",
+    "Rico Cilliers"
+   ],
+   "license": "CC0",
+   "bytes": 676908,
+   "props": [
+    "sand_rocks"
+   ]
+  },
+  "shrub_02": {
+   "src": "shrub_02",
+   "url": "https://polyhaven.com/a/shrub_02",
+   "name": "Shrub 02",
+   "authors": [
+    "Rico Cilliers"
+   ],
+   "license": "CC0",
+   "bytes": 647120,
+   "props": [
+    "shrub_a",
+    "shrub_b",
+    "shrub_c",
+    "shrub_d"
+   ]
+  },
+  "single_root": {
+   "src": "single_root",
+   "url": "https://polyhaven.com/a/single_root",
+   "name": "Single Root",
+   "authors": [
+    "Jenelle van Heerden"
+   ],
+   "license": "CC0",
+   "bytes": 428104,
+   "props": [
+    "root_single"
+   ]
+  },
+  "small_lpg_tank": {
+   "src": "small_lpg_tank",
+   "url": "https://polyhaven.com/a/small_lpg_tank",
+   "name": "Small Lpg Tank",
+   "authors": [
+    "Ulan Cabanilla"
+   ],
+   "license": "CC0",
+   "bytes": 181140,
+   "props": [
+    "gas_bottle_02"
+   ]
+  },
+  "street_lamp_01": {
+   "src": "street_lamp_01",
+   "url": "https://polyhaven.com/a/street_lamp_01",
+   "name": "Street Lamp 01",
+   "authors": [
+    "Josh Dean"
+   ],
+   "license": "CC0",
+   "bytes": 284740,
+   "props": [
+    "street_lamp_01"
+   ]
+  },
+  "street_lamp_02": {
+   "src": "street_lamp_02",
+   "url": "https://polyhaven.com/a/street_lamp_02",
+   "name": "Street Lamp 02",
+   "authors": [
+    "Josh Dean"
+   ],
+   "license": "CC0",
+   "bytes": 277264,
+   "props": [
+    "street_lamp_02"
+   ]
+  },
+  "tool_cart": {
+   "src": "tool_cart",
+   "url": "https://polyhaven.com/a/tool_cart",
+   "name": "Tool Cart",
+   "authors": [
+    "Savva Zakharov"
+   ],
+   "license": "CC0",
+   "bytes": 476900,
+   "props": [
+    "tool_cart"
+   ]
+  },
+  "trashbag": {
+   "src": "trashbag",
+   "url": "https://polyhaven.com/a/trashbag",
+   "name": "Trashbag",
+   "authors": [
+    "Benny Weimer"
+   ],
+   "license": "CC0",
+   "bytes": 128836,
+   "props": [
+    "trash_bag"
+   ]
+  },
+  "tree_stump_01": {
+   "src": "tree_stump_01",
+   "url": "https://polyhaven.com/a/tree_stump_01",
+   "name": "Tree Stump 01",
+   "authors": [
+    "Rob Tuytel"
+   ],
+   "license": "CC0",
+   "bytes": 773224,
+   "props": [
+    "stump_01"
+   ]
+  },
+  "tree_stump_02": {
+   "src": "tree_stump_02",
+   "url": "https://polyhaven.com/a/tree_stump_02",
+   "name": "Tree Stump 02",
+   "authors": [
+    "Rob Tuytel"
+   ],
+   "license": "CC0",
+   "bytes": 807588,
+   "props": [
+    "stump_02"
+   ]
+  },
+  "utility_box_01": {
+   "src": "utility_box_01",
+   "url": "https://polyhaven.com/a/utility_box_01",
+   "name": "Utility Box 01",
+   "authors": [
+    "James Ray Cock"
+   ],
+   "license": "CC0",
+   "bytes": 113252,
+   "props": [
+    "utility_box_01"
+   ]
+  },
+  "utility_box_02": {
+   "src": "utility_box_02",
+   "url": "https://polyhaven.com/a/utility_box_02",
+   "name": "Utility Box 02",
+   "authors": [
+    "James Ray Cock"
+   ],
+   "license": "CC0",
+   "bytes": 129180,
+   "props": [
+    "utility_box_02"
+   ]
+  },
+  "water_manhole_cover": {
+   "src": "water_manhole_cover",
+   "url": "https://polyhaven.com/a/water_manhole_cover",
+   "name": "Water Manhole Cover",
+   "authors": [
+    "Raunox"
+   ],
+   "license": "CC0",
+   "bytes": 157024,
+   "props": [
+    "manhole"
+   ]
+  },
+  "wine_barrel_01": {
+   "src": "wine_barrel_01",
+   "url": "https://polyhaven.com/a/wine_barrel_01",
+   "name": "Wine Barrel 01",
+   "authors": [
+    "James Ray Cock"
+   ],
+   "license": "CC0",
+   "bytes": 355356,
+   "props": [
+    "barrel_wood"
+   ]
+  },
+  "wooden_barrels_01": {
+   "src": "wooden_barrels_01",
+   "url": "https://polyhaven.com/a/wooden_barrels_01",
+   "name": "Wooden Barrels 01",
+   "authors": [
+    "James Ray Cock"
+   ],
+   "license": "CC0",
+   "bytes": 1175012,
+   "props": [
+    "barrel_staves",
+    "barrel_wood_02",
+    "barrel_wood_03"
+   ]
+  },
+  "wooden_bucket_01": {
+   "src": "wooden_bucket_01",
+   "url": "https://polyhaven.com/a/wooden_bucket_01",
+   "name": "Wooden Bucket 01",
+   "authors": [
+    "James Ray Cock"
+   ],
+   "license": "CC0",
+   "bytes": 145104,
+   "props": [
+    "bucket"
+   ]
+  },
+  "wooden_crate_01": {
+   "src": "wooden_crate_01",
+   "url": "https://polyhaven.com/a/wooden_crate_01",
+   "name": "Wooden Crate 01",
+   "authors": [
+    "James Ray Cock"
+   ],
+   "license": "CC0",
+   "bytes": 347860,
+   "props": [
+    "crate_01"
+   ]
+  },
+  "wooden_crate_02": {
+   "src": "wooden_crate_02",
+   "url": "https://polyhaven.com/a/wooden_crate_02",
+   "name": "Wooden Crate 02",
+   "authors": [
+    "James Ray Cock",
+    "Jurita Burger"
+   ],
+   "license": "CC0",
+   "bytes": 352560,
+   "props": [
+    "crate_02"
+   ]
+  },
+  "wooden_ladder": {
+   "src": "wooden_ladder",
+   "url": "https://polyhaven.com/a/wooden_ladder",
+   "name": "Wooden Ladder",
+   "authors": [
+    "Miroslav Turura"
+   ],
+   "license": "CC0",
+   "bytes": 182872,
+   "props": [
+    "ladder"
+   ]
+  },
+  "wooden_military_crate": {
+   "src": "wooden_military_crate",
+   "url": "https://polyhaven.com/a/wooden_military_crate",
+   "name": "Wooden Military Crate",
+   "authors": [
+    "Prabhjinder Singh"
+   ],
+   "license": "CC0",
+   "bytes": 489208,
+   "props": [
+    "crate_03"
+   ]
+  },
+  "wooden_picnic_table": {
+   "src": "wooden_picnic_table",
+   "url": "https://polyhaven.com/a/wooden_picnic_table",
+   "name": "Wooden Picnic Table",
+   "authors": [
+    "Ulan Cabanilla"
+   ],
+   "license": "CC0",
+   "bytes": 548960,
+   "props": [
+    "picnic_table"
+   ]
+  }
+ },
+ "trees": {
+  "file": "trees/trees.glb",
+  "generator": "ez-tree (MIT) by Dan Greenheck, https://github.com/dgreenheck/ez-tree",
+  "bytes": 2813676
+ }
+}
