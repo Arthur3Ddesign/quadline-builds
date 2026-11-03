@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quadline FPV: download</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="site/favicon.png">
+<style>
+  :root {
+    --bg: #07090d; --panel: #10141b; --fg: #e8ecf2; --muted: #9aa3af; --line: #222a35; --accent: #ffcf3f; --ink: #07090d;
+    --display: "Bahnschrift", "Segoe UI", system-ui, sans-serif;
+    --body: "Segoe UI", system-ui, -apple-system, sans-serif;
+    --mono: "Cascadia Mono", Consolas, ui-monospace, monospace;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 var(--body); }
+  .wrap { max-width: 880px; margin: 0 auto; padding-inline: 18px; padding-block: 36px 64px; display: grid; gap: 34px; }
+  header { display: flex; align-items: center; gap: 14px; }
+  header img { width: 56px; height: 56px; border-radius: 14px; }
+  .brand { font: 800 italic 34px/1 var(--display); letter-spacing: 1px; }
+  .brand b { color: var(--accent); }
+  .tag { font: 500 12px var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+  .hero { display: grid; gap: 18px; }
+  h1 { margin: 0; font: 800 clamp(30px, 6vw, 46px)/1.08 var(--display); text-wrap: balance; }
+  p { margin: 0; max-width: 62ch; color: var(--muted); }
+  .dl { display: inline-flex; align-items: center; justify-content: center; gap: 12px; justify-self: start; background: var(--accent); color: var(--ink); text-decoration: none; font: 800 20px var(--display); padding: 18px 28px; border-radius: 12px; box-shadow: 0 10px 30px rgba(255, 207, 63, .18); }
+  .dl:hover { filter: brightness(1.06); }
+  .dl:focus-visible { outline: 3px solid var(--fg); outline-offset: 4px; }
+  .dl svg { width: 22px; height: 22px; }
+  .meta { font: 13px var(--mono); color: var(--muted); }
+  .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .shots img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px; border: 1px solid var(--line); display: block; }
+  @media (max-width: 640px) { .shots { grid-template-columns: 1fr; } .dl { justify-self: stretch; } }
+  section { display: grid; gap: 14px; }
+  h2 { margin: 0; font: 700 22px var(--display); }
+  ol { margin: 0; padding-left: 1.3em; display: grid; gap: 10px; max-width: 66ch; }
+  ol li::marker { color: var(--accent); font-weight: 700; }
+  ol b { color: var(--fg); }
+  .note { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; color: var(--muted); max-width: 66ch; }
+  .note b { color: var(--fg); }
+  footer { color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="site/logo.png" alt="">
+    <div>
+      <div class="brand"><b>Q</b>UADLINE FPV</div>
+      <div class="tag">Realistic FPV drone simulator</div>
+    </div>
+  </header>
+
+  <div class="hero">
+    <h1>Get the game</h1>
+    <p>One download for Windows PCs. After that it keeps itself up to date: every time you start it, it fetches the newest version by itself.</p>
+    <a class="dl" id="dl" href="https://github.com/Arthur3Ddesign/quadline-builds/releases/latest/download/QuadlineFPV-Setup.exe">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+      Download for Windows
+    </a>
+    <div class="meta" id="meta">Windows 10 or 11 · 64-bit</div>
+  </div>
+
+  <div class="shots">
+    <img src="site/shot1.jpg" alt="Flying past a tower crane on the Highrise Site">
+    <img src="site/shot2.jpg" alt="Low over a full car park at the Grand Stadium">
+    <img src="site/shot3.jpg" alt="A ferry leaving her berth with two tugs at Kingsport Docks">
+  </div>
+
+  <section>
+    <h2>How to install</h2>
+    <ol>
+      <li><b>Tap Download.</b> If your browser says the file isn't commonly downloaded, choose <b>Keep</b>.</li>
+      <li><b>Open QuadlineFPV-Setup.exe.</b> If Windows shows "Windows protected your PC", click <b>More info</b>, then <b>Run anyway</b>. That's because it's a small game that isn't on a store yet.</li>
+      <li><b>That's it.</b> It installs in a few seconds, opens the game and puts Quadline FPV on your desktop. No admin password needed.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Playing together</h2>
+    <div class="note">For online multiplayer, <b>open Steam and log in first</b>, then go to Multiplayer in the game: one player hosts and reads out the join code, the others join with it. On the same Wi-Fi you can use <b>Multiplayer → LAN</b> (allow the firewall if Windows asks).</div>
+  </section>
+
+  <footer>A private test copy shared by the developer. Please don't sell it.</footer>
+</div>
+<script>
+  // What the latest build is, from the update site's own list.
+  fetch('latest.json?t=' + Date.now()).then((r) => r.json()).then((j) => {
+    const d = new Date(j.date);
+    const when = d.toLocaleDateString(undefined, { day: 'numeric', month: 'long', year: 'numeric' });
+    document.getElementById('meta').textContent = `Windows 10 or 11 · 64-bit · updated ${when}` + (j.notes ? ` · ${j.notes.length > 110 ? j.notes.slice(0, 108) + '…' : j.notes}` : '');
+  }).catch(() => {});
+</script>
+</body>
+</html>
