@@ -3,95 +3,275 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Quadline FPV: download</title>
+<title>Quadline FPV</title>
+<meta name="description" content="Quadline FPV, a realistic FPV drone simulator. Download the test copy for Windows.">
 <meta name="robots" content="noindex">
+<meta property="og:title" content="Quadline FPV">
+<meta property="og:description" content="A realistic FPV drone simulator: 30 living maps, real-radio flying, multiplayer.">
+<meta property="og:image" content="https://arthur3ddesign.github.io/quadline-builds/site/hero.jpg">
 <link rel="icon" href="site/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;1,800;1,900&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
 <style>
+  /* Layout: a full-bleed hero framed like the game's own FPV feed, then clips, what it is, the maps and how to install. */
   :root {
-    --bg: #07090d; --panel: #10141b; --fg: #e8ecf2; --muted: #9aa3af; --line: #222a35; --accent: #ffcf3f; --ink: #07090d;
-    --display: "Bahnschrift", "Segoe UI", system-ui, sans-serif;
-    --body: "Segoe UI", system-ui, -apple-system, sans-serif;
-    --mono: "Cascadia Mono", Consolas, ui-monospace, monospace;
+    --bg: #07090d; --bg2: #0c1016; --panel: #11161e; --line: #1f2731; --fg: #edf0f4; --muted: #98a2ae; --accent: #ffcf3f; --ink: #0a0c10; --osd: #f2f5f8;
+    --display: "Barlow Condensed", "Bahnschrift", "Arial Narrow", sans-serif;
+    --body: "Barlow", "Segoe UI", system-ui, sans-serif;
+    --mono: "JetBrains Mono", "Cascadia Mono", Consolas, monospace;
+    --wrap: 1180px;
     color-scheme: dark;
   }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 var(--body); }
-  .wrap { max-width: 880px; margin: 0 auto; padding-inline: 18px; padding-block: 36px 64px; display: grid; gap: 34px; }
-  header { display: flex; align-items: center; gap: 14px; }
-  header img { width: 56px; height: 56px; border-radius: 14px; }
-  .brand { font: 800 italic 34px/1 var(--display); letter-spacing: 1px; }
-  .brand b { color: var(--accent); }
-  .tag { font: 500 12px var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
-  .hero { display: grid; gap: 18px; }
-  h1 { margin: 0; font: 800 clamp(30px, 6vw, 46px)/1.08 var(--display); text-wrap: balance; }
-  p { margin: 0; max-width: 62ch; color: var(--muted); }
-  .dl { display: inline-flex; align-items: center; justify-content: center; gap: 12px; justify-self: start; background: var(--accent); color: var(--ink); text-decoration: none; font: 800 20px var(--display); padding: 18px 28px; border-radius: 12px; box-shadow: 0 10px 30px rgba(255, 207, 63, .18); }
-  .dl:hover { filter: brightness(1.06); }
-  .dl:focus-visible { outline: 3px solid var(--fg); outline-offset: 4px; }
-  .dl svg { width: 22px; height: 22px; }
-  .meta { font: 13px var(--mono); color: var(--muted); }
-  .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
-  .shots img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px; border: 1px solid var(--line); display: block; }
-  @media (max-width: 640px) { .shots { grid-template-columns: 1fr; } .dl { justify-self: stretch; } }
-  section { display: grid; gap: 14px; }
-  h2 { margin: 0; font: 700 22px var(--display); }
-  ol { margin: 0; padding-left: 1.3em; display: grid; gap: 10px; max-width: 66ch; }
-  ol li::marker { color: var(--accent); font-weight: 700; }
-  ol b { color: var(--fg); }
-  .note { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; color: var(--muted); max-width: 66ch; }
-  .note b { color: var(--fg); }
-  footer { color: var(--muted); font-size: 13px; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 var(--body); }
+  img, video { max-width: 100%; display: block; }
+  a { color: inherit; }
+  .wrap { max-width: var(--wrap); margin: 0 auto; padding-inline: 20px; }
+  .label { font: 500 12px var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--accent); }
+  h1, h2, h3 { font-family: var(--display); margin: 0; line-height: 1; text-wrap: balance; }
+  h2 { font-weight: 800; font-style: italic; font-size: clamp(36px, 5vw, 56px); text-transform: uppercase; letter-spacing: .01em; }
+  h3 { font-weight: 800; font-size: 26px; text-transform: uppercase; letter-spacing: .02em; }
+  p { margin: 0; }
+
+  /* Nav */
+  nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: rgba(7, 9, 13, .82); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  nav .wrap { display: flex; align-items: center; gap: 22px; height: 62px; }
+  .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .logo img { width: 34px; height: 34px; border-radius: 9px; }
+  .logo span { font: 900 italic 24px var(--display); letter-spacing: .04em; }
+  .logo b { color: var(--accent); }
+  nav .links { display: flex; gap: 22px; margin-left: auto; }
+  nav .links a { text-decoration: none; font: 600 15px var(--body); color: var(--muted); }
+  nav .links a:hover { color: var(--fg); }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; font: 800 italic 18px var(--display); letter-spacing: .05em; text-transform: uppercase; padding: 11px 20px; border-radius: 8px; background: var(--accent); color: var(--ink); white-space: nowrap; }
+  .btn:hover { filter: brightness(1.07); }
+  .btn:focus-visible, nav a:focus-visible { outline: 3px solid var(--fg); outline-offset: 3px; }
+  .btn svg { width: 20px; height: 20px; flex: none; }
+  .btn.big { font-size: 24px; padding: 18px 30px; border-radius: 10px; box-shadow: 0 12px 28px rgba(0, 0, 0, .45); }
+  .btn.ghost { background: transparent; color: var(--fg); border: 1.5px solid rgba(237, 240, 244, .35); }
+  @media (max-width: 760px) { nav .links { display: none; } nav .btn { margin-left: auto; } }
+
+  /* Hero: the picture is a frame of the game, OSD and all. */
+  .hero { position: relative; min-height: min(88vh, 860px); display: grid; align-items: end; overflow: hidden; background: #000; }
+  .hero > picture img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,9,13,.15) 0%, rgba(7,9,13,.05) 35%, rgba(7,9,13,.78) 78%, var(--bg) 100%); }
+  .hero .wrap { position: relative; z-index: 3; padding-block: 140px 64px; display: grid; gap: 22px; }
+  .hero h1 { font-weight: 900; font-style: italic; font-size: clamp(56px, 10vw, 132px); line-height: .86; text-transform: uppercase; letter-spacing: .005em; }
+  .hero h1 b { color: var(--accent); }
+  .hero .sub { font-size: clamp(18px, 2vw, 21px); max-width: 52ch; color: #d6dbe1; }
+  .hero .ctas { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+  .hero .meta { font: 500 13px var(--mono); color: var(--muted); }
+  @media (max-width: 640px) { .hero .wrap { padding-block: 120px 48px; } .hero .btn.big { width: 100%; } }
+
+  section { padding-block: 90px; }
+  .head { display: grid; gap: 12px; margin-bottom: 36px; }
+  .head p { color: var(--muted); max-width: 60ch; }
+
+  /* Clips: vertical loops straight from the game. */
+  .clips { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .clip { margin: 0; display: grid; gap: 10px; }
+  .clip video { width: 100%; aspect-ratio: 9/16; object-fit: cover; border-radius: 12px; background: #000; border: 1px solid var(--line); }
+  .clip figcaption { font: 600 15px var(--body); color: var(--muted); }
+  .clip figcaption b { display: block; color: var(--fg); font: 800 italic 20px var(--display); text-transform: uppercase; letter-spacing: .03em; }
+  @media (max-width: 900px) { .clips { grid-template-columns: repeat(2, 1fr); } }
+  .socials { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+
+  /* Features */
+  .features { background: var(--bg2); border-block: 1px solid var(--line); }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+  .feat { background: var(--panel); padding: 30px 26px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+  .feat .stat { font: 900 italic 54px/1 var(--display); color: var(--accent); }
+  .feat p { color: var(--muted); }
+  @media (max-width: 900px) { .grid3 { grid-template-columns: 1fr; } }
+
+  /* Gallery */
+  .gallery { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
+  .shot { margin: 0; position: relative; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); background: #000; }
+  .shot img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 16/9; transition: transform .5s ease; }
+  .shot:hover img { transform: scale(1.03); }
+  .shot figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 14px 10px; background: linear-gradient(transparent, rgba(0,0,0,.78)); font: 800 italic 18px var(--display); text-transform: uppercase; letter-spacing: .03em; }
+  .shot.w3 { grid-column: span 3; } .shot.w2 { grid-column: span 2; }
+  @media (max-width: 760px) { .gallery { grid-template-columns: 1fr; } .shot.w3, .shot.w2 { grid-column: auto; } }
+  @media (prefers-reduced-motion: reduce) { .shot img { transition: none; } }
+
+  /* Map list */
+  .maps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 40px; }
+  .group { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 22px; display: grid; gap: 12px; align-content: start; min-width: 0; }
+  .group ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
+  .group li { font-weight: 500; }
+  .group li::before { content: "◆"; color: var(--accent); font-size: 10px; margin-right: 9px; position: relative; top: -2px; }
+  @media (max-width: 900px) { .maps { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .maps { grid-template-columns: 1fr; } }
+
+  /* Install */
+  .install { display: grid; grid-template-columns: 1.3fr 1fr; gap: 26px; align-items: start; }
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; counter-reset: s; }
+  .steps li { counter-increment: s; display: grid; grid-template-columns: 52px 1fr; gap: 16px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+  .steps li::before { content: counter(s); font: 900 italic 40px/1 var(--display); color: var(--accent); }
+  .steps b { display: block; font: 800 italic 21px var(--display); text-transform: uppercase; letter-spacing: .03em; margin-bottom: 4px; }
+  .steps p, .side p { color: var(--muted); }
+  .side { display: grid; gap: 14px; }
+  .box { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 20px; display: grid; gap: 8px; }
+  .box table { border-collapse: collapse; font-size: 15px; }
+  .box td { padding: 4px 14px 4px 0; vertical-align: top; color: var(--muted); }
+  .box td:first-child { color: var(--fg); font-weight: 600; white-space: nowrap; }
+  @media (max-width: 900px) { .install { grid-template-columns: 1fr; } }
+
+  .cta-end { text-align: center; display: grid; gap: 18px; justify-items: center; }
+  footer { border-top: 1px solid var(--line); padding-block: 30px 44px; color: var(--muted); font-size: 14px; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 14px 28px; justify-content: space-between; }
+  footer a { color: var(--muted); }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <img src="site/logo.png" alt="">
-    <div>
-      <div class="brand"><b>Q</b>UADLINE FPV</div>
-      <div class="tag">Realistic FPV drone simulator</div>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top"><img src="site/logo.png" alt=""><span><b>Q</b>UADLINE FPV</span></a>
+    <div class="links"><a href="#clips">Clips</a><a href="#features">Features</a><a href="#maps">Maps</a><a href="#install">Install</a></div>
+    <a class="btn dl" href="https://github.com/Arthur3Ddesign/quadline-builds/releases/latest/download/QuadlineFPV-Setup.exe">Download</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <picture>
+    <source media="(max-width: 640px)" srcset="site/hero-m.jpg">
+    <img src="site/hero.jpg" alt="Flying low across the long shadows of a stone viaduct at golden hour in Glenfell Valley">
+  </picture>
+  <div class="wrap">
+    <div class="label">Realistic FPV drone simulator</div>
+    <h1>Fly it like<br>it's <b>real</b>.</h1>
+    <p class="sub">Real flight physics, your own radio and 30 maps that move: chase an airliner down the runway, fly through a train, dive a lift shaft and film a live match.</p>
+    <div class="ctas">
+      <a class="btn big dl" href="https://github.com/Arthur3Ddesign/quadline-builds/releases/latest/download/QuadlineFPV-Setup.exe">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+        Download for Windows
+      </a>
+      <a class="btn ghost" href="#clips">Watch clips</a>
     </div>
-  </header>
-
-  <div class="hero">
-    <h1>Get the game</h1>
-    <p>One download for Windows PCs. After that it keeps itself up to date: every time you start it, it fetches the newest version by itself.</p>
-    <a class="dl" id="dl" href="https://github.com/Arthur3Ddesign/quadline-builds/releases/latest/download/QuadlineFPV-Setup.exe">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
-      Download for Windows
-    </a>
-    <div class="meta" id="meta">Windows 10 or 11 · 64-bit</div>
+    <div class="meta" id="meta">Free test copy · Windows 10/11 · updates itself</div>
   </div>
+</header>
 
-  <div class="shots">
-    <img src="site/shot1.jpg" alt="Flying past a tower crane on the Highrise Site">
-    <img src="site/shot2.jpg" alt="Low over a full car park at the Grand Stadium">
-    <img src="site/shot3.jpg" alt="A ferry leaving her berth with two tugs at Kingsport Docks">
-  </div>
+<main>
+  <section id="clips">
+    <div class="wrap">
+      <div class="head">
+        <div class="label">Straight from the game</div>
+        <h2>See it fly</h2>
+        <p>Every clip is recorded in Quadline: the trains, ships, cars and the match are all running live in the map.</p>
+      </div>
+      <div class="clips">
+        <figure class="clip"><video src="site/clip-train.mp4" poster="site/clip-train.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>Through a moving train</b>Neon District at night</figcaption></figure>
+        <figure class="clip"><video src="site/clip-stadium.mp4" poster="site/clip-stadium.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>Into a live match</b>Grand Stadium</figcaption></figure>
+        <figure class="clip"><video src="site/clip-rally.mp4" poster="site/clip-rally.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>Chasing a rally car</b>Glenmorrow Forest Stage</figcaption></figure>
+        <figure class="clip"><video src="site/clip-ferry.mp4" poster="site/clip-ferry.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>The ferry is leaving</b>Kingsport Docks</figcaption></figure>
+      </div>
+      <div class="socials">
+        <a class="btn ghost" href="https://www.youtube.com/@QuadlineFPV" target="_blank" rel="noopener">YouTube</a>
+        <a class="btn ghost" href="https://www.instagram.com/quadlinefpv/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </section>
 
-  <section>
-    <h2>How to install</h2>
-    <ol>
-      <li><b>Tap Download.</b> If your browser says the file isn't commonly downloaded, choose <b>Keep</b>.</li>
-      <li><b>Open QuadlineFPV-Setup.exe.</b> If Windows shows "Windows protected your PC", click <b>More info</b>, then <b>Run anyway</b>. That's because it's a small game that isn't on a store yet.</li>
-      <li><b>That's it.</b> It installs in a few seconds, opens the game and puts Quadline FPV on your desktop. No admin password needed.</li>
-    </ol>
+  <section class="features" id="features">
+    <div class="wrap">
+      <div class="head">
+        <div class="label">What's inside</div>
+        <h2>Built to feel like the real thing</h2>
+      </div>
+      <div class="grid3">
+        <div class="feat"><div class="stat">1000&nbsp;Hz</div><h3>Real flight physics</h3><p>The quad is simulated a thousand times a second: motors, props, prop wash when you drop into your own air, ground effect and battery sag.</p></div>
+        <div class="feat"><div class="stat">Your radio</div><h3>Fly with your own gear</h3><p>Plug in a radio or a gamepad and set it up in a minute. Betaflight-style rates, PIDs and tunes, plus dozens of real frames, motors and props to build with.</p></div>
+        <div class="feat"><div class="stat">30 maps</div><h3>Places that move</h3><p>Traffic, trains you can fly through, airliners on take-off, skydivers, drift and rally cars, roller coasters and a football match.</p></div>
+        <div class="feat"><div class="stat">Online</div><h3>Fly with friends</h3><p>Multiplayer over Steam with a join code, or on the same Wi-Fi with LAN. Damage on or off, turtle mode included.</p></div>
+        <div class="feat"><div class="stat">6 skies</div><h3>Any time of day</h3><p>Morning, midday, golden hour, overcast, dusk or night under the city lights, with weather on top.</p></div>
+        <div class="feat"><div class="stat">F9</div><h3>Record your best lines</h3><p>One key saves a clip of what you just flew, ready to post.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="maps">
+    <div class="wrap">
+      <div class="head">
+        <div class="label">30 maps</div>
+        <h2>Somewhere new every session</h2>
+        <p>Packed with things to fly through, under and round: no long empty gaps between the good bits.</p>
+      </div>
+      <div class="gallery">
+        <figure class="shot w3"><img src="site/g-drift.jpg" alt="Chasing two drift cars round a corner" loading="lazy"><figcaption>Ridgeway Drift Park</figcaption></figure>
+        <figure class="shot w3"><img src="site/g-matchday.jpg" alt="Low over the pitch during a match" loading="lazy"><figcaption>Grand Stadium</figcaption></figure>
+        <figure class="shot w2"><img src="site/g-ferry.jpg" alt="Beside a ferry at golden hour" loading="lazy"><figcaption>Kingsport Docks</figcaption></figure>
+        <figure class="shot w2"><img src="site/g-train.jpg" alt="Over the railway in the city at night" loading="lazy"><figcaption>Neon District</figcaption></figure>
+        <figure class="shot w2"><img src="site/g-crane.jpg" alt="Along a tower crane's jib" loading="lazy"><figcaption>Highrise Site</figcaption></figure>
+        <figure class="shot w2"><img src="site/g-rally.jpg" alt="Behind a rally car on a gravel road" loading="lazy"><figcaption>Glenmorrow Forest Stage</figcaption></figure>
+        <figure class="shot w2"><img src="site/g-arena.jpg" alt="Racing gates inside an arena" loading="lazy"><figcaption>Neon Arena</figcaption></figure>
+        <figure class="shot w2"><img src="site/g-chimney.jpg" alt="Out of a chimney's flue door in a factory yard" loading="lazy"><figcaption>Abandoned Factory</figcaption></figure>
+      </div>
+      <div class="maps">
+        <div class="group"><div class="label">City &amp; industry</div><ul><li>Neon District</li><li>Highrise Site</li><li>Abandoned Factory</li><li>Kingsport Docks</li><li>Nightfall Airfield</li><li>Hollowbrook Mall</li><li>Hot Pursuit</li><li>Redrock Quarry</li></ul></div>
+        <div class="group"><div class="label">Racing</div><ul><li>Ridgeway Drift Park</li><li>Kingsbridge Grand Prix</li><li>Red Hill MX</li><li>Arena Supercross</li><li>Glenmorrow Forest Stage</li><li>Sierra Roja Sprint</li><li>Velocity Indoor Karting</li><li>Ashgrove Race Field</li></ul></div>
+        <div class="group"><div class="label">Big air &amp; nature</div><ul><li>Grand Couloir (wingsuits)</li><li>Blue Ridge Drop Zone</li><li>Seacliff Soaring</li><li>Glenfell Low-Flying Valley</li><li>Hohtal Valley</li><li>Copper Gorge</li><li>Willow Farm</li><li>Open Plain</li></ul></div>
+        <div class="group"><div class="label">Events &amp; indoor</div><ul><li>Grand Stadium</li><li>Wonderfield Festival</li><li>Thunder Peak Park</li><li>Neon Arena</li><li>Westfield Sports Hall</li><li>Maple Close</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="install">
+    <div class="wrap">
+      <div class="head">
+        <div class="label">Install</div>
+        <h2>Up and flying in a minute</h2>
+      </div>
+      <div class="install">
+        <ol class="steps">
+          <li><div><b>Download</b><p>Tap <a href="https://github.com/Arthur3Ddesign/quadline-builds/releases/latest/download/QuadlineFPV-Setup.exe" class="dl">Download for Windows</a>. If your browser says the file isn't commonly downloaded, choose <strong>Keep</strong>.</p></div></li>
+          <li><div><b>Open it</b><p>Run QuadlineFPV-Setup.exe. If Windows says "Windows protected your PC", click <strong>More info</strong>, then <strong>Run anyway</strong>. It shows that because the game isn't on a store yet.</p></div></li>
+          <li><div><b>Fly</b><p>It installs in a few seconds, opens the game and puts Quadline FPV on your desktop. No admin password needed.</p></div></li>
+          <li><div><b>Stay up to date</b><p>Nothing to do: every time the game starts it fetches the newest version by itself.</p></div></li>
+        </ol>
+        <div class="side">
+          <div class="box"><h3>Playing together</h3><p>Open <strong>Steam</strong> and log in first, then go to Multiplayer: one player hosts and shares the join code. Same Wi-Fi? Use <strong>Multiplayer → LAN</strong> and allow the firewall if Windows asks.</p></div>
+          <div class="box"><h3>Your PC</h3><table><tr><td>System</td><td>Windows 10 or 11, 64-bit</td></tr><tr><td>Download</td><td id="size">316 MB</td></tr><tr><td>Graphics</td><td>Runs on laptop graphics on Low; a gaming GPU for High and Ultra</td></tr><tr><td>Controls</td><td>Radio, gamepad, or keyboard and mouse</td></tr></table></div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section>
-    <h2>Playing together</h2>
-    <div class="note">For online multiplayer, <b>open Steam and log in first</b>, then go to Multiplayer in the game: one player hosts and reads out the join code, the others join with it. On the same Wi-Fi you can use <b>Multiplayer → LAN</b> (allow the firewall if Windows asks).</div>
+    <div class="wrap cta-end">
+      <h2>Ready to send it?</h2>
+      <a class="btn big dl" href="https://github.com/Arthur3Ddesign/quadline-builds/releases/latest/download/QuadlineFPV-Setup.exe">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+        Download for Windows
+      </a>
+    </div>
   </section>
+</main>
 
-  <footer>A private test copy shared by the developer. Please don't sell it.</footer>
-</div>
+<footer>
+  <div class="wrap">
+    <span>Quadline FPV · private test copy shared by the developer · coming to Steam</span>
+    <span><a href="https://www.youtube.com/@QuadlineFPV" target="_blank" rel="noopener">YouTube</a> · <a href="https://www.instagram.com/quadlinefpv/" target="_blank" rel="noopener">Instagram</a></span>
+  </div>
+</footer>
+
 <script>
-  // What the latest build is, from the update site's own list.
+  // When the newest build went up, from the update site's own list.
   fetch('latest.json?t=' + Date.now()).then((r) => r.json()).then((j) => {
-    const d = new Date(j.date);
-    const when = d.toLocaleDateString(undefined, { day: 'numeric', month: 'long', year: 'numeric' });
-    document.getElementById('meta').textContent = `Windows 10 or 11 · 64-bit · updated ${when}` + (j.notes ? ` · ${j.notes.length > 110 ? j.notes.slice(0, 108) + '…' : j.notes}` : '');
+    const when = new Date(j.date).toLocaleDateString(undefined, { day: 'numeric', month: 'long', year: 'numeric' });
+    document.getElementById('meta').textContent = `Free test copy · Windows 10/11 · updated ${when}`;
   }).catch(() => {});
+  // Clips only play while on screen.
+  const vids = document.querySelectorAll('.clip video');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((es) => es.forEach((e) => (e.isIntersecting ? e.target.play().catch(() => {}) : e.target.pause())), { threshold: 0.25 });
+    vids.forEach((v) => io.observe(v));
+  }
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) vids.forEach((v) => { v.removeAttribute('autoplay'); v.pause(); v.controls = true; });
 </script>
 </body>
 </html>
